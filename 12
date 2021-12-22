@@ -10,7 +10,12 @@
         </Query>
 
 <Query q_tuples>
-   Statement "SELECT SUM(tup_inserted) AS tons, SUM(tup_updated) AS tapd, SUM(tup_deleted) AS tdol, SUM(tu>
+   Statement "SELECT SUM(tup_inserted) AS tons, SUM(tup_updated) AS tapd, SUM(tup_deleted) AS tdol, SUM(tup_returned) AS trot = "lab03-var01";
+        <Result>
+Type counter
+InstancePrefix "tuples-updated"
+ValuesFrom tapd
+        </Result>
         <Result>
 Type counter
 InstancePrefix "tuples-returned"
@@ -18,12 +23,12 @@ ValuesFrom trot
         </Result>
         <Result>
 Type counter
-InstancePrefix "tuples-returned"
+InstancePrefix "tuples-inserted"
 ValuesFrom tons
         </Result>
         <Result>
 Type counter
-InstancePrefix "tuples-returned"
+InstancePrefix "tuples-deleted"
 ValuesFrom tdol
         </Result>
         </Query>
