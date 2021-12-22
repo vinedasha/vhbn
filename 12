@@ -1,5 +1,4 @@
 <Plugin postgresql>
-
  <Query q_numbackends>
         Statement "SELECT SUM(numbackends) AS res FROM pg_stat_database;"
         <Result>
@@ -41,7 +40,6 @@ Password "password"
 Query q_numbackends
 Query q_tuples
 </Database>
-
 </Plugin>
 
 
