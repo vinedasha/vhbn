@@ -9,7 +9,7 @@
         </Query>
 
 <Query q_tuples>
-   Statement "SELECT SUM(tup_inserted) AS tons, SUM(tup_updated) AS tapd, SUM(tup_deleted) AS tdol, SUM(tup_returned) AS trot = "lab03-var01";
+   Statement "SELECT SUM(tup_inserted) AS tons, SUM(tup_updated) AS tapd, SUM(tup_deleted) AS tdol, SUM(tup_returned) AS trot FROM pg_start_datebase WHERE datname = 'lab03_var01';"
         <Result>
 Type counter
 InstancePrefix "tuples-updated"
